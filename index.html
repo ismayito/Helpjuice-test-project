@@ -11,8 +11,9 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="w-full h-full">
+  <body class="w-full h-full mb-10">
     <main class="w-full h-full" title="main-content">
+      <!-- Header section -->
       <header
         class="flex items-center justify-between mt-8 ml-4 mr-14"
         title="header"
@@ -44,6 +45,7 @@
           </li>
         </ul>
       </header>
+      <!-- Intro section -->
       <section class="mt-12 text-center mx-auto" title="introduction">
         <h1 class="font-jakarta font-extrabold text-5xl text-gray-800">
           Your Magic Wand for<br />
@@ -65,6 +67,291 @@
           </a>
         </button>
       </section>
+      <!-- Main content section -->
+      <div title="main-content" class="w-5/6 mx-auto">
+        <img
+          class="w-full mt-4 md:mt-12 object-fit h-[600px]"
+          src="./images/assets/intro-image.svg "
+          alt="play-image"
+        />
+        <section class="mt-12 flex justify-center w-full" title="instructions ">
+          <h3
+            class="text-gray-950 p-3 text-center text-3xl font-extrabold"
+            title="instructions-title"
+          >
+            Say <span class="underline">Goodbye to writing Docs</span>, and
+            Hello <br />To WizardShot Doing it for YOU
+          </h3>
+        </section>
+        <div
+          class="w-full mt-12 flex justify-center"
+          title="instructions-cards"
+        >
+          <div class="min-w-min grid grid-cols-3 gap-5">
+            <div
+              class="min-w-min h-w-min bg-gradient-to-br from-purple-500 to-indigo-500"
+            >
+              <div class="w-64 h-auto p-3 bg-gray-400 mb-3">
+                <div class="w-full bg-red-50 h-6 mb-2 rounded-md"></div>
+                <div class="bg-gradient-to-r from-pink-400 p-2">
+                  <div class="w-56 bg-gray-100 h-20">
+                    <div class="flex items-center justify-between">
+                      <div
+                        class="w-14 h-3 ml-2 mt-2 bg-gray-200 rounded-md"
+                      ></div>
+                      <div
+                        class="w-3 h-3 mt-2 mr-2 bg-gray-200 rounded-full"
+                      ></div>
+                    </div>
+                    <button
+                      type="button"
+                      class="group rounded bg-gradient-to-r mt-3 from-blue-800 via-blue-500 to-blue-800 w-52 h-8 mx-2"
+                    ></button>
+                  </div>
+                </div>
+                <div class="w-full bg-red-50 h-6 mb-2 rounded-md"></div>
+              </div>
+            </div>
+            <div class="w-64 h-56 bg-gray-500"></div>
+            <div class="w-64 h-56 bg-gray-500"></div>
+          </div>
+        </div>
+
+        <!-- Features section -->
+        <section
+          class="w-full flex items-center justify-center mt-10"
+          title="features"
+        >
+          <h4
+            class="font-jakarta font-bold text-base text-gray-950 text-center"
+          >
+            <span class="underline text-3xl">+32 MORE FEATURES</span>
+            <br />
+            <span class="">INCLUDING A KB INTEGRATION</span>
+          </h4>
+        </section>
+        <section
+          class="w-full flex items-center justify-center mt-14"
+          title="features"
+        >
+          <div class="flex h-5 items-center">
+            <p class="h-5">Free</p>
+            <div class="flex items flex-col justify-start">
+              <p>Free</p>
+              <p>Forever</p>
+            </div>
+          </div>
+        </section>
+        <!-- create tutorial section -->
+        <section class="w-full flex items-center flex-col justify-center">
+          <section
+            class="w-5/6 flex items-center flex-col justify-center mx-auto mt-10 border-8 border-gray-950 rounded-xl"
+          >
+            <p
+              class="text-gray-950 text-center font-extrabold font-jakarta text-4xl"
+            >
+              Create A Detailed Tutorial <br />in Less than 3 clicks
+            </p>
+            <a
+              href="#"
+              class="btn group w-auto py-6 px-6 mt-10 flex items-center justify-center text-center"
+            >
+              <img
+                src="./images//assets//chrome-icon.svg"
+                alt="chrome-log"
+                class="w-8 h-8"
+              />
+              <p class="text-white text-3xl">Install Wizardshot</p>
+            </a>
+            <p
+              class="font-jakarta font-semibold text-3xl mt-7 text-center text-gray-950"
+            >
+              &quot;Has helped us write help docs 100x faster &quot;
+              <br />
+              <span class="font-normal">
+                – Dany River, Cartier Informatie
+              </span>
+            </p>
+            <dl class="sr-only">Reviews</dl>
+            <dt class="flex justify-center items-center text-center mt-2 mb-10">
+              <img src="./images/assets/Frame 1321318417.svg" alt="stars" />
+            </dt>
+          </section>
+        </section>
+        <!-- Commonly asked questions -->
+        <section
+          class="w-4/5 mx-auto flex items-center flex-col justify-center py-5 px-3"
+          title="commonly asked questions"
+        >
+          <h5 class="font-jakarta font-bold text-3xl text-center mt-12">
+            Common Questions
+          </h5>
+          <article class="w-full border-b-2 border-gray-300 py-3">
+            <section
+              class="w-full flex items-center py-4 justify-between"
+              title="question"
+            >
+              <p class="font-semibold text-md text-gray-950">
+                What is Wizardshot?
+              </p>
+              <img src="./images/assets/chevron-down.svg" alt="chevron-down" />
+            </section>
+            <p class="font-normal text-sm">
+              Wizardshot is a web app & chrome extension . that allows you to
+              create step-by-step tutorials simply by capturing your screen.
+            </p>
+          </article>
+          <article class="w-full border-b-2 border-gray-300 py-3">
+            <section
+              class="w-full flex items-center py-4 justify-between"
+              title="question"
+            >
+              <p class="font-semibold text-md text-gray-950">
+                How is Wizardshot Free?
+              </p>
+              <img src="./images/assets/chevron-down.svg" alt="chevron-down" />
+            </section>
+            <p class="font-normal text-sm">
+              The costs to run a service is really inexpensive as most of the
+              processing happens in the Chrome extension.
+            </p>
+            <p class="font-normal text-sm py-2">
+              Really - all that we have to pay for is
+              <span class="underline">super-secure hosting, awesome 24/7</span>
+              support and that’s it.
+            </p>
+            <p class="font-semibold text-sm py-2">
+              We built Wizardshot as a stand-alone product with a deep
+              <span class="underline">Helpjuice Knowledge</span> Base
+              integration.
+            </p>
+          </article>
+          <article class="w-full border-b-2 border-gray-300 py-3">
+            <section
+              class="w-full flex items-center py-4 justify-between"
+              title="question"
+            >
+              <p class="font-semibold text-md text-gray-950">
+                Is my data secure?
+              </p>
+              <img src="./images/assets/chevron-down.svg" alt="chevron-down" />
+            </section>
+          </article>
+          <section class="w-full flex items-center justify-between mt-8">
+            <p class="font-semibold text-sm">Curious to learn more?</p>
+            <a href="#" class="btn group text-center w-auto">
+              <p class="text-white">Vist help &amp; Community Center</p>
+            </a>
+          </section>
+        </section>
+
+        <!-- Footer -->
+        <footer class="w-full" title="footer">
+          <section
+            class="flex justify-between items-center pt-5 pb-3 px-2 btn"
+            title="tutorial number"
+          >
+            <section class="flex justify-start gap-0 flex-col">
+              <p class="font-semibold text-3xl text-start text-gray-50">
+                Create Tutorials in 3 Clicks
+              </p>
+              <p class="text-gray-600">
+                With WizardShot, You Click Capture, And We’ll Capture What’s
+                Happening on Your Screen And Turn It Into A Tutorial.
+              </p>
+            </section>
+            <section class="flex items-center">
+              <button class="btn text-gray-50 underline">Try WizardShot</button>
+              <img
+                src="./images/assets/arrow-narrow-right.svg"
+                alt="arrow-icon"
+              />
+            </section>
+          </section>
+          <!-- footer section -->
+          <div
+            class="w-full grid grid-cols-4 mt-20 gap-5"
+            title="footer-section"
+          >
+            <div class="">
+              <img src="./images//assets/Logo.svg" alt="company-logo" />
+              <p class="text-gray-950 text-base mt-2 mb-3">
+                Turn complex process into a simple step-by step Guide
+              </p>
+              <img src="./images//assets/teste 1.svg" alt="company-logo" />
+            </div>
+
+            <div class="">
+              <p href="#" class="font-semibold text-xl text-gray-950">
+                Learn more
+              </p>
+              <div class="flex flex-col mb-0">
+                <a href="#" class="text-gray-950 text-base mt-1">WizardShot</a>
+                <a href="#" class="text-gray-950 text-base mt-1"
+                  >Community Help</a
+                >
+                <a href="#" class="text-gray-950 text-base mt-1">Help Center</a>
+                <a href="#" class="text-gray-950 text-base mt-1">
+                  Security Information
+                </a>
+              </div>
+            </div>
+            <!-- footer about section -->
+            <div class="">
+              <p href="#" class="font-semibold text-xl text-gray-950">
+                Company
+              </p>
+              <div class="flex flex-col mb-0">
+                <a href="#" class="text-gray-950 text-base mt-1">About us</a>
+                <a href="#" class="text-gray-950 text-base mt-1">Status page</a>
+              </div>
+            </div>
+
+            <div class="flex flex-col">
+              <div>
+                <p
+                  href="#"
+                  class="font-normal text-sm text-gray-700 text-end"
+                  title="phone contact"
+                >
+                  📞 +1 (833) 387 3877
+                </p>
+              </div>
+              <div class="flex flex-col mb-0">
+                <a
+                  href="#"
+                  class="text-gray-700 text-sm mt-1 text-end"
+                  title="email-contact"
+                  >✉️ success@wizardshot.com</a
+                >
+                <div class="flex gap-3 justify-end" title="socials">
+                  <a href="#" class="text-gray-950 text-base mt-1">
+                    <img src="images/assets/Vector.svg" alt="instagram" />
+                  </a>
+                  <a href="#" class="text-gray-950 text-base mt-1">
+                    <img
+                      src="images/assets/ri_instagram-fill.svg"
+                      alt="tiktok"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="flex font-semibold justify-end gap-6 text-2xl mt-6 mr-6"
+                >
+                  <a href="#" class="text-gray-950 mt-1 text-end"> Sign up </a>
+                  <a href="#" class="text-gray-950 mt-1 text-end"> Log in </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            class="w-full font-normal text-gray-950 text-center mt-12"
+            title="copyright"
+          >
+            &copy; 2024 Wizardshot – All rights reserved.
+          </p>
+        </footer>
+      </div>
     </main>
     <script src="index.js"></script>
   </body>
