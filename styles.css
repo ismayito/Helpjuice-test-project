@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  @apply flex items-center gap-2 py-1 px-3 rounded-md text-gray-900  w-full h-full bg-black;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
