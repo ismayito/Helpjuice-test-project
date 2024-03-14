@@ -4,9 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Helpjuice landing page</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jakarta+Sans:wght@400;500;700&display=swap"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-500">
+  <body class="w-full h-full">
+    <main class="w-full h-full" title="main-content">
+      <header
+        class="flex items-center justify-between mt-8 ml-4 mr-14"
+        title="header"
+      >
+        <img src="./images/assets/logo.svg" alt="logo" class="w-32" />
+        <nav class="flex items-center justify-between" title="navigation-links">
+          <ul class="flex items-center gap-6 text-gray-500 text-small">
+            <li>
+              <a href="/" class="text-gray-900 active:text-black-900 underline"
+                >Home</a
+              >
+            </li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help Center &amp; Community</a></li>
+          </ul>
+        </nav>
+        <ul class="flex items-center gap-3 text-small">
+          <li><a href="#" class="text-gray-500">Log in</a></li>
+          <li>
+            <a href="#" class="btn group">
+              <img
+                src="./images//assets//chrome-icon.svg"
+                alt="chrome-log"
+                class="w-4 h-4"
+              />
+              <p class="text-white">Install wizardshot</p>
+            </a>
+          </li>
+        </ul>
+      </header>
+      <section class="mt-12 text-center mx-auto" title="introduction">
+        <h1 class="font-jakarta font-extrabold text-5xl text-gray-800">
+          Your Magic Wand for<br />
+          Instant Documentation
+        </h1>
+        <h3
+          class="text-center mt-4 font-opensans uppercase text-sm font-bold text-gray-600"
+        >
+          Turn ANY process into a simple step-by step Guide
+        </h3>
+        <button type="button" class="text-center">
+          <a href="#" class="btn group mt-8 w-max text-center">
+            <p class="text-white">Install wizardshot</p>
+            <img
+              src="./images//assets/arrow-narrow-right.svg"
+              alt="chrome-log"
+              class="w-4 h-4"
+            />
+          </a>
+        </button>
+      </section>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
