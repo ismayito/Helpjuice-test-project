@@ -13,9 +13,31 @@
   </head>
   <body class="w-full h-full mb-10">
     <main class="w-full h-full" title="main-content">
+      <!-- Header section mobile -->
+      <header class="flex flex-col md:hidden">
+        <div
+          class="w-full flex items-center p-4 border-b-2 gap-3 border-gray justify-between relative"
+        >
+          <img src="./images/assets/logo.svg" alt="logo" class="w-32" />
+          <img
+            src="./images/assets/menu.svg"
+            alt="close-icon"
+            class="w-6 relative"
+            id="menu-btn"
+          />
+          <img
+            src="./images/assets/x-close.svg"
+            alt="close-icon"
+            class="w-6 hidden"
+            id="close-btn"
+          />
+        </div>
+        <!-- dynamically render the mobile navigation menu -->
+        <div class="hidden fixed top-16 w-full h-svh" id="menu-section"></div>
+      </header>
       <!-- Header section -->
       <header
-        class="flex items-center justify-between mt-8 ml-4 mr-14"
+        class="hidden md:flex md:items-center md:justify-between md:mt-8 md:ml-4 mr-14"
         title="header"
       >
         <img src="./images/assets/logo.svg" alt="logo" class="w-32" />
@@ -46,8 +68,10 @@
         </ul>
       </header>
       <!-- Intro section -->
-      <section class="mt-12 text-center mx-auto" title="introduction">
-        <h1 class="font-jakarta font-extrabold text-5xl text-gray-800">
+      <section class="mt-12 text-center mx-auto intro" title="introduction">
+        <h1
+          class="font-jakarta text-4xl font-extrabold md:text-5xl text-gray-800"
+        >
           Your Magic Wand for<br />
           Instant Documentation
         </h1>
@@ -57,7 +81,7 @@
           Turn ANY process into a simple step-by step Guide
         </h3>
         <button type="button" class="text-center">
-          <a href="#" class="btn group mt-8 w-max text-center">
+          <a href="#" class="btn group text-sm mt-8 w-max text-center">
             <p class="text-white">Install wizardshot</p>
             <img
               src="./images//assets/arrow-narrow-right.svg"
@@ -68,9 +92,9 @@
         </button>
       </section>
       <!-- Main content section -->
-      <div title="main-content" class="w-5/6 mx-auto">
+      <div title="main-content" class="w-5/6 mx-auto main">
         <img
-          class="w-full mt-4 md:mt-12 object-fit h-[600px]"
+          class="w-full mt-20 md:mt-12 object-fit md:h-[600px]"
           src="./images/assets/intro-image.svg "
           alt="play-image"
         />
@@ -87,9 +111,9 @@
           class="w-full mt-12 flex justify-center"
           title="instructions-cards"
         >
-          <div class="min-w-min grid grid-cols-3 gap-5">
+          <div class="w-4/5 flex items-center justify-center gap-5  flex-col md:flex-row md:flex-grow  ">
             <div
-              class="min-w-min h-w-min bg-gradient-to-br from-purple-500 to-indigo-500"
+              class="w-64 h-w-min bg-gradient-to-br from-purple-500 to-indigo-500"
             >
               <div class="w-64 h-auto p-3 bg-gray-400 mb-3">
                 <div class="w-full bg-red-50 h-6 mb-2 rounded-md"></div>
@@ -127,7 +151,7 @@
           >
             <span class="underline text-3xl">+32 MORE FEATURES</span>
             <br />
-            <span class="">INCLUDING A KB INTEGRATION</span>
+            <span class="text-base">INCLUDING A KB INTEGRATION</span>
           </h4>
         </section>
         <section
@@ -145,10 +169,10 @@
         <!-- create tutorial section -->
         <section class="w-full flex items-center flex-col justify-center">
           <section
-            class="w-5/6 flex items-center flex-col justify-center mx-auto mt-10 border-8 border-gray-950 rounded-xl"
+            class="w-5/6 flex items-center flex-col p-8 justify-center mx-auto mt-10 border-8 border-gray-950 rounded-xl"
           >
             <p
-              class="text-gray-950 text-center font-extrabold font-jakarta text-4xl"
+              class="text-gray-950 text-3xl text-center font-extrabold font-jakarta md:text-4xl"
             >
               Create A Detailed Tutorial <br />in Less than 3 clicks
             </p>
@@ -161,10 +185,10 @@
                 alt="chrome-log"
                 class="w-8 h-8"
               />
-              <p class="text-white text-3xl">Install Wizardshot</p>
+              <p class="text-white text-2xl md:text-3xl">Install Wizardshot</p>
             </a>
             <p
-              class="font-jakarta font-semibold text-3xl mt-7 text-center text-gray-950"
+              class="font-jakarta font-semibold text-sm md:text-3xl mt-7 text-center text-gray-950"
             >
               &quot;Has helped us write help docs 100x faster &quot;
               <br />
@@ -237,10 +261,12 @@
               <img src="./images/assets/chevron-down.svg" alt="chevron-down" />
             </section>
           </article>
-          <section class="w-full flex items-center justify-between mt-8">
-            <p class="font-semibold text-sm">Curious to learn more?</p>
+          <section
+            class="w-full flex flex-col justify-center items-center md:flex-row md:items-center md:justify-between mt-8"
+          >
+            <p class="font-semibold text-sm mb-2">Curious to learn more?</p>
             <a href="#" class="btn group text-center w-auto">
-              <p class="text-white">Vist help &amp; Community Center</p>
+              <p class="text-white">Visit help &amp; Community Center</p>
             </a>
           </section>
         </section>
@@ -248,7 +274,7 @@
         <!-- Footer -->
         <footer class="w-full" title="footer">
           <section
-            class="flex justify-between items-center pt-5 pb-3 px-2 btn"
+            class="flex flex-col md:flex-row md:justify-between items-center pt-5 pb-3 px-2 btn"
             title="tutorial number"
           >
             <section class="flex justify-start gap-0 flex-col">
@@ -260,7 +286,7 @@
                 Happening on Your Screen And Turn It Into A Tutorial.
               </p>
             </section>
-            <section class="flex items-center">
+            <section class="flex group justify-items-end md:items-center">
               <button class="btn text-gray-50 underline">Try WizardShot</button>
               <img
                 src="./images/assets/arrow-narrow-right.svg"
@@ -270,7 +296,7 @@
           </section>
           <!-- footer section -->
           <div
-            class="w-full grid grid-cols-4 mt-20 gap-5"
+            class="w-full grid grid-cols-1 md:grid-cols-3 mt-20 gap-5"
             title="footer-section"
           >
             <div class="">
@@ -280,38 +306,48 @@
               </p>
               <img src="./images//assets/teste 1.svg" alt="company-logo" />
             </div>
-
-            <div class="">
-              <p href="#" class="font-semibold text-xl text-gray-950">
-                Learn more
-              </p>
-              <div class="flex flex-col mb-0">
-                <a href="#" class="text-gray-950 text-base mt-1">WizardShot</a>
-                <a href="#" class="text-gray-950 text-base mt-1"
-                  >Community Help</a
-                >
-                <a href="#" class="text-gray-950 text-base mt-1">Help Center</a>
-                <a href="#" class="text-gray-950 text-base mt-1">
-                  Security Information
-                </a>
+            <!-- Learn more footer section -->
+            <div class="flex justify-between gap-5">
+              <div class="">
+                <p href="#" class="font-semibold text-xl text-gray-950">
+                  Learn more
+                </p>
+                <div class="flex flex-col mb-0">
+                  <a href="#" class="text-gray-950 text-base mt-1"
+                    >WizardShot</a
+                  >
+                  <a href="#" class="text-gray-950 text-base mt-1"
+                    >Community Help</a
+                  >
+                  <a href="#" class="text-gray-950 text-base mt-1"
+                    >Help Center</a
+                  >
+                  <a href="#" class="text-gray-950 text-base mt-1">
+                    Security Information
+                  </a>
+                </div>
+              </div>
+              <!-- footer about section -->
+              <div class="">
+                <p href="#" class="font-semibold text-xl text-gray-950">
+                  Company
+                </p>
+                <div class="flex flex-col mb-0">
+                  <a href="#" class="text-gray-950 text-base mt-1">About us</a>
+                  <a href="#" class="text-gray-950 text-base mt-1"
+                    >Status page</a
+                  >
+                </div>
               </div>
             </div>
-            <!-- footer about section -->
-            <div class="">
-              <p href="#" class="font-semibold text-xl text-gray-950">
-                Company
-              </p>
-              <div class="flex flex-col mb-0">
-                <a href="#" class="text-gray-950 text-base mt-1">About us</a>
-                <a href="#" class="text-gray-950 text-base mt-1">Status page</a>
-              </div>
-            </div>
 
+            <!-- Contact footer section -->
             <div class="flex flex-col">
+              <div class="order-3 md:order-1 pt-5 border-t-2 border-gray-500 mt-6 md:mt-0 md:border-t-0 md:pt-0" title="contact-container">
               <div>
                 <p
                   href="#"
-                  class="font-normal text-sm text-gray-700 text-end"
+                  class="font-normal text-sm text-gray-700  text-center md:text-end"
                   title="phone contact"
                 >
                   📞 +1 (833) 387 3877
@@ -320,11 +356,13 @@
               <div class="flex flex-col mb-0">
                 <a
                   href="#"
-                  class="text-gray-700 text-sm mt-1 text-end"
+                  class="text-gray-700 text-sm mt-1 text-center md:text-end"
                   title="email-contact"
                   >✉️ success@wizardshot.com</a
                 >
-                <div class="flex gap-3 justify-end" title="socials">
+              </div>
+              </div>
+                <div class="flex gap-3 justify-start mt-2 md:order-2 md:justify-end md:mt-0" title="socials">
                   <a href="#" class="text-gray-950 text-base mt-1">
                     <img src="images/assets/Vector.svg" alt="instagram" />
                   </a>
@@ -335,8 +373,8 @@
                     />
                   </a>
                 </div>
-                <div
-                  class="flex font-semibold justify-end gap-6 text-2xl mt-6 mr-6"
+              <div
+                  class="flex font-semibold justify-start order-2 md:order-3 gap-6 text-2xl mt-6 mr-6 md:justify-end"
                 >
                   <a href="#" class="text-gray-950 mt-1 text-end"> Sign up </a>
                   <a href="#" class="text-gray-950 mt-1 text-end"> Log in </a>
@@ -345,7 +383,7 @@
             </div>
           </div>
           <p
-            class="w-full font-normal text-gray-950 text-center mt-12"
+            class="copy-right w-full font-normal text-gray-500 md:text-gray-950 text-center mt-12"
             title="copyright"
           >
             &copy; 2024 Wizardshot – All rights reserved.
