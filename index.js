@@ -37,7 +37,6 @@ menuItems.forEach((item) => {
     menuBtn.classList.remove('absolute');
     mainContent.classList.remove('hidden');
     intro.classList.remove('hidden');
-    console.log('item clicked');
   });
 });
 
