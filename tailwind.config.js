@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         jakarta: ['Plus Jakarta Sans', 'sans-serif'],
         opensans: ['Open Sans', 'sans-serif'],
+        madimi: ['Madimi One', 'sans-serif'],
       },
       colors: {
         sectionColor: '#F3F3F3',
